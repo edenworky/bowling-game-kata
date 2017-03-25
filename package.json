@@ -1,0 +1,38 @@
+{
+  "name": "bowling-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "ava": "^0.18.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2017": "^6.22.0",
+    "babel-preset-latest": "^6.24.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "babel-register": "^6.24.0",
+    "nodemon": "^1.11.0"
+  },
+  "scripts": {
+    "start": "nodemon app --exec babel-node",
+    "test": "ava"
+  },
+  "babel": {
+    "presets": [
+      "latest",
+      "stage-2"
+    ],
+    "plugins": []
+  },
+  "ava": {
+    "babel": "inherit",
+    "require": [
+      "babel-register",
+      "babel-polyfill"
+    ]
+  },
+  "author": "",
+  "license": "ISC"
+}
